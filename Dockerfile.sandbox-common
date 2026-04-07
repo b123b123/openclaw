@@ -2,6 +2,8 @@
 
 ARG BASE_IMAGE=openclaw-sandbox:bookworm-slim
 FROM ${BASE_IMAGE}
+ENV http_proxy=http://host.docker.internal:7890
+ENV https_proxy=http://host.docker.internal:7890
 
 USER root
 
